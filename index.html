@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<header>
+    <link rel="stylesheet" href="resume.css">
+</header>
+<body>
+    <form id="forms" class="form-container"> 
+    
+        <h1> DYNAMIC RESUME </h1>
+
+        <!-- Personal Information Part -->
+        <h1 class="m-1"> PERSONAL INFORMATION </h1>
+        <div>
+            <p>Username: <input id="name" type="text" name="name" placeholder="Enter your name"></p>
+            <p>Email: <input id="email" type="email" name="email" placeholder="Enter your email"></p>
+            <p>Phone: <input id="phone" type="number" name="number" placeholder="Enter your phone number"></p>
+            <p id="selelect">City:
+                <select>
+                    <option>Karachi</option>
+                    <option>Hyderabad</option>
+                    <option>Lahore</option>
+                    <option>Islamabad</option>
+                    <option>Nawabshah</option>
+                </select>
+            </p>
+        </div>
+
+        <!-- Education Part -->
+        <h1 class="m-1"> EDUCATION </h1>
+        <div> 
+            <p>Matric: <input type="text" id="matric" name="matric" placeholder="Enter name of institute"></p>
+            <p>Inter: <input type="text" id="inter" name="inter" placeholder="Enter name of institute"></p>
+            <p>Graduation: <input type="text" id="grad" name="grad" placeholder="Enter name of institute"></p>
+            <p id="select">Graduation:
+                <select>
+                    <option>Others</option>
+                    <option>NED University</option>
+                    <option>MEHRAN University</option>
+                    <option>DOW University</option>
+                    <option>LUMS University</option>
+                </select>
+            </p>
+        </div>
+
+        <!-- Work Experience Part -->
+        <h1 class="m-1"> WORK EXPERIENCE </h1>
+        <div class="m-1 text-black border-2">
+            <textarea name="work" id="textexp" placeholder="Enter your work experience"></textarea>
+        </div>
+
+        <!-- Skills Part -->
+        <h1 class="m-1"> SKILLS </h1>
+        <div class="m-1 text-black border-2">
+            <textarea name="skill" id="textskills" placeholder="Enter your skills"></textarea>
+        </div>
+
+        <!-- Submission Date -->
+        <p>Date: <input id="date" type="number" name="number" placeholder="Enter the date"></p>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    
+
+    <script src="resume.js"></script>
+</body>
+</html>
